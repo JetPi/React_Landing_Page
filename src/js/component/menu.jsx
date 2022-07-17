@@ -2,9 +2,9 @@ import React from "react";
 
 const Menu = () =>{
     return(
-        <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+        <nav className="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
         <div className="container-fluid mx-2">
-            <a className="navbar-brand" href="#">Star Boostrap</a>
+            <a className="navbar-brand" href="#">Start Boostrap</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
