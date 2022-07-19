@@ -2,7 +2,7 @@ body{
     padding-top: 56px;
 }
 
-.card-group>.card+.card {
+/* .card-group>.card+.card {
     margin-left: 0;
     border: 0;
 }
@@ -10,7 +10,7 @@ body{
 .card-group>.card {
     margin-left: 0;
     border: 0;
-}
+} */
 /* 
 
     You can write your own styles here...
