@@ -4,6 +4,7 @@ import React from "react";
 import Menu from "../component/menu.jsx"
 import Jumbotron from "../component/jumbotron.jsx"
 import Card from "../component/card.jsx"
+import CardGroup from "../component/cardGroup.jsx"
 
 //variables for adding to components
 let jumboDescription = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed reiciendis totam maiores, neque eligendi earum doloremque natus quos vitae quis accusamus perspiciatis dolores. Reiciendis doloremque blanditiis dolores molestiae minima!"
@@ -24,6 +25,7 @@ let cardProps3 =
 	image: "https://picsum.photos/seed/325/500",
 	description: "This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action."};
 
+let cardProps = [cardProps1, cardProps2, cardProps3]
 
 const Home = () => {
 	return (
@@ -31,9 +33,10 @@ const Home = () => {
 	<div className="container-fluid row" style={{paddingRight: "0px"}}>
 		<Menu/>
 		<Jumbotron title="A Warm Welcome!" description={jumboDescription}/>
-		<Card title={cardProps1.title} image={cardProps1.image} description={cardProps1.description} />
+		<CardGroup cardData={cardProps} />
+		{/* <Card title={cardProps1.title} image={cardProps1.image} description={cardProps1.description} />
 		<Card title={cardProps2.title} image={cardProps2.image} description={cardProps2.description} />
-		<Card title={cardProps3.title} image={cardProps3.image} description={cardProps3.description} />
+		<Card title={cardProps3.title} image={cardProps3.image} description={cardProps3.description} /> */}
 	</div>
 		
 	</>

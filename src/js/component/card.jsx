@@ -3,7 +3,6 @@ import React from "react";
 const Card = (props) => {
     const {image, title, description} = props
     return (
-        // const {wwwwwwwwww} = props
         <div className="col-sm-12 col-md-4 ">
         <div className="card">
             <img src={image} className="card-img-top"/>
