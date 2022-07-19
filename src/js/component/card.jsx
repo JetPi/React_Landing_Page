@@ -3,18 +3,17 @@ import React from "react";
 const Card = (props) => {
     const {image, title, description} = props
     return (
-        <div className="col-sm-12 col-md-4 ">
-        <div className="card">
+        <div className="card" style={{margin: "0px 10px 20px 10px" }}>
             <img src={image} className="card-img-top"/>
             <div className="card-body">
             <h5 className="card-title text-center">{title}</h5>
             <p className="card-text text-center">{description}</p>
             </div>
-            <ul className="list-group list-group-flush">
-                <li className="list-group-item mx-auto"> <a href="#" className="btn btn-primary mx-auto">Go somewhere</a> </li>
-            </ul>
+            <div className="card-footer" style={{display: "flex"}}>
+                <a href="#" className="btn btn-primary mx-auto">Call to action!</a> 
+            </div>
         </div>
-        </div>
+        
     );
 }
 

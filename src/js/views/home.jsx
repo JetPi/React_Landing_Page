@@ -3,8 +3,9 @@ import React from "react";
 //import your components
 import Menu from "../component/menu.jsx"
 import Jumbotron from "../component/jumbotron.jsx"
-import Card from "../component/card.jsx"
+// import Card from "../component/card.jsx"
 import CardGroup from "../component/cardGroup.jsx"
+import Footer from "../component/footer.jsx"
 
 //variables for adding to components
 let jumboDescription = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed reiciendis totam maiores, neque eligendi earum doloremque natus quos vitae quis accusamus perspiciatis dolores. Reiciendis doloremque blanditiis dolores molestiae minima!"
@@ -34,11 +35,12 @@ const Home = () => {
 		<Menu/>
 		<Jumbotron title="A Warm Welcome!" description={jumboDescription}/>
 		<CardGroup cardData={cardProps} />
+		
 		{/* <Card title={cardProps1.title} image={cardProps1.image} description={cardProps1.description} />
 		<Card title={cardProps2.title} image={cardProps2.image} description={cardProps2.description} />
 		<Card title={cardProps3.title} image={cardProps3.image} description={cardProps3.description} /> */}
 	</div>
-		
+	<Footer/>
 	</>
 	);
 };
